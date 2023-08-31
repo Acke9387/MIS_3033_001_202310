@@ -11,7 +11,7 @@
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="267,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Enter your birthdate:" HorizontalAlignment="Left" Margin="124,140,0,0" VerticalAlignment="Top" Foreground="#FFFAF7F7" FontWeight="Bold"/>
         <TextBox x:Name="txtDob" HorizontalAlignment="Left" Margin="267,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnAddStudent" Content="Create Student" HorizontalAlignment="Left" Margin="207,276,0,0" VerticalAlignment="Top" Height="49" Width="120"/>
+        <Button x:Name="btnAddStudent" Content="Create Student" HorizontalAlignment="Left" Margin="207,276,0,0" VerticalAlignment="Top" Height="49" Width="120" Click="btnAddStudent_Click" MouseEnter="btnAddStudent_MouseEnter" MouseLeave="btnAddStudent_MouseLeave"/>
 
     </Grid>
 </Window>
