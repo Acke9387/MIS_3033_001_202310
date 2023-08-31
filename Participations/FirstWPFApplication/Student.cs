@@ -43,5 +43,10 @@ namespace FirstWPFApplication
             }
         }
 
+
+        public override string ToString()
+        {
+            return $"{Name} was born on {Birthdate?.ToShortDateString()}";
+        }
     }
 }

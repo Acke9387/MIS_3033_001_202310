@@ -11,7 +11,9 @@
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="267,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Enter your birthdate:" HorizontalAlignment="Left" Margin="124,140,0,0" VerticalAlignment="Top" Foreground="#FFFAF7F7" FontWeight="Bold"/>
         <TextBox x:Name="txtDob" HorizontalAlignment="Left" Margin="267,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnAddStudent" Content="Create Student" HorizontalAlignment="Left" Margin="207,276,0,0" VerticalAlignment="Top" Height="49" Width="120" Click="btnAddStudent_Click" MouseEnter="btnAddStudent_MouseEnter" MouseLeave="btnAddStudent_MouseLeave"/>
+        <Button x:Name="btnAddStudent" Content="Create Student" HorizontalAlignment="Left" Margin="132,271,0,0" VerticalAlignment="Top" Height="49" Width="120" Click="btnAddStudent_Click" MouseEnter="btnAddStudent_MouseEnter" MouseLeave="btnAddStudent_MouseLeave" IsDefault="True"/>
+        <ListBox x:Name="lstStudents" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="529,0,0,0" Background="#8CFFFFFF" MouseDoubleClick="lstStudents_MouseDoubleClick" />
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="327,271,0,0" VerticalAlignment="Top" Height="49" Width="120" Click="btnClear_Click" IsCancel="True"/>
 
     </Grid>
 </Window>
