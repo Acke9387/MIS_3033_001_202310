@@ -23,6 +23,8 @@ namespace FirstWPFApplication
         public MainWindow()
         {
             InitializeComponent();
+
+            
         }
     }
 }
