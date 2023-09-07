@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstWPF", "FirstWPF\FirstWPF.csproj", "{BE1A6DF5-8D97-47C6-967A-EF676E401553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstWPF", "FirstWPF\FirstWPF.csproj", "{BE1A6DF5-8D97-47C6-967A-EF676E401553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonExample", "JsonExample\JsonExample.csproj", "{9DCA7C3C-DCFA-4C17-ABFA-AB1E6D049EA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BE1A6DF5-8D97-47C6-967A-EF676E401553}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE1A6DF5-8D97-47C6-967A-EF676E401553}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE1A6DF5-8D97-47C6-967A-EF676E401553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DCA7C3C-DCFA-4C17-ABFA-AB1E6D049EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DCA7C3C-DCFA-4C17-ABFA-AB1E6D049EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DCA7C3C-DCFA-4C17-ABFA-AB1E6D049EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DCA7C3C-DCFA-4C17-ABFA-AB1E6D049EA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
