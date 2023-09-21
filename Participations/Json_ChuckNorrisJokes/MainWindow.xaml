@@ -1,0 +1,23 @@
+﻿<Window x:Class="Json_ChuckNorrisJokes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Json_ChuckNorrisJokes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="556" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="https://i.ebayimg.com/images/g/RboAAOSwpPtko3n0/s-l1600.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Label Content="Select a category" Margin="82,83,606,429" Background="#FFE8CECE"/>
+        <ComboBox x:Name="cboCategory" HorizontalAlignment="Left" Margin="234,86,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnGetJoke" Content="Generate Joke" HorizontalAlignment="Left" Margin="116,140,0,0" VerticalAlignment="Top" Height="170" Width="137" IsDefault="True" Click="btnGetJoke_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="https://th.bing.com/th/id/R.860f85a3d92be8fe5735be34ab72bda2?rik=uw5o55EcKFCSIQ&amp;riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2009%2f12%2fjoker-playing-card_323059.jpg&amp;ehk=BDydKQpkGSS%2fi0TIrgXipvGu3x3wPkF18w1QLCH85T8%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="txtJoke" HorizontalAlignment="Left" Margin="400,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="354" Background="#99FFFFFF"/>
+
+    </Grid>
+</Window>
