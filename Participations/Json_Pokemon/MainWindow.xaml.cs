@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,6 +23,9 @@ namespace Json_Pokemon
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Pokemon pokeDetails = null;
+        private bool showFront = true;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -39,6 +43,45 @@ namespace Json_Pokemon
                 }
             }
 
+        }
+
+        private void cboPokemen_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            PokemonItem selectedPokemon = (PokemonItem)cboPokemen.SelectedItem;
+
+            if (selectedPokemon == null) { return; }
+
+            using (var client = new HttpClient())
+            {
+                var response = client.GetStringAsync(selectedPokemon.url).Result;
+                pokeDetails = JsonConvert.DeserializeObject<Pokemon>(response);
+
+                txtHeight.Text = pokeDetails.height.ToString();
+                txtName.Text = pokeDetails.name;
+                txtWeight.Text = pokeDetails.weight.ToString();
+                imgPoke.Source = new BitmapImage(new Uri(pokeDetails.sprites.front_default));
+                showFront = false;
+            }
+            btnRotate.IsEnabled = true;
+        }
+
+        private void btnRotate_Click(object sender, RoutedEventArgs e)
+        {
+            if (pokeDetails != null)
+            {
+                if (showFront == false)
+                {
+                    imgPoke.Source = new BitmapImage(new Uri(pokeDetails.sprites.back_default));
+
+                }
+                else
+                {
+                    imgPoke.Source = new BitmapImage(new Uri(pokeDetails.sprites.front_default));
+
+                }
+                showFront = !showFront;
+
+            }
         }
     }
 }
