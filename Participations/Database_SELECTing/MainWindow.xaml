@@ -1,0 +1,22 @@
+﻿<Window x:Class="Database_SELECTing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Database_SELECTing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="lstStudents" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,118,591,139" MouseDoubleClick="lstStudents_MouseDoubleClick" SelectionChanged="lstStudents_SelectionChanged"/>
+        <Label Content="Students" HorizontalAlignment="Left" Margin="48,69,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstCourses" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="576,113,15,144" MouseDoubleClick="lstCourses_MouseDoubleClick"/>
+        <Label Content="Courses" HorizontalAlignment="Left" Margin="624,64,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstRegistrations" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="296,113,295,144"/>
+        <Label Content="Registrations" HorizontalAlignment="Left" Margin="344,64,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="34,329,0,0" VerticalAlignment="Top" Height="42" Width="110" Click="btnCreate_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="230,329,0,0" VerticalAlignment="Top" Height="42" Width="110" Click="btnDelete_Click"/>
+        <Button x:Name="btnRegisterForCourse" Content="Register student for course" HorizontalAlignment="Left" Margin="423,329,0,0" VerticalAlignment="Top" Height="42" Width="110" Click="btnRegisterForCourse_Click"/>
+        <Button x:Name="btnEdit" Content="Change Students Name to Joe" HorizontalAlignment="Left" Margin="559,329,0,0" VerticalAlignment="Top" Height="42" Width="175" Click="btnEdit_Click"/>
+
+    </Grid>
+</Window>

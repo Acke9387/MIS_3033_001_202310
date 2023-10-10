@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstWPFApplication", "Firs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Json_ChuckNorrisJokes", "Json_ChuckNorrisJokes\Json_ChuckNorrisJokes.csproj", "{03AB61B0-6D10-4114-92D9-022A9F001EC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json_Pokemon", "Json_Pokemon\Json_Pokemon.csproj", "{7E24A636-72C1-4A27-93A5-32EAA3B1F155}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Json_Pokemon", "Json_Pokemon\Json_Pokemon.csproj", "{7E24A636-72C1-4A27-93A5-32EAA3B1F155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database_SELECTing", "Database_SELECTing\Database_SELECTing.csproj", "{44C04A36-9896-4622-B4E9-5A07CC4B96CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{7E24A636-72C1-4A27-93A5-32EAA3B1F155}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E24A636-72C1-4A27-93A5-32EAA3B1F155}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E24A636-72C1-4A27-93A5-32EAA3B1F155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C04A36-9896-4622-B4E9-5A07CC4B96CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C04A36-9896-4622-B4E9-5A07CC4B96CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C04A36-9896-4622-B4E9-5A07CC4B96CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C04A36-9896-4622-B4E9-5A07CC4B96CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
