@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonExample", "JsonExample\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRequest_RickAndMorty", "WebRequest_RickAndMorty\WebRequest_RickAndMorty.csproj", "{B8437767-EDEA-497F-BC01-12AC3183ABDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_SelectingFromDatabase", "EF_SelectingFromDatabase\EF_SelectingFromDatabase.csproj", "{7919CB37-27DC-44B9-92D3-26FAE3B9BF93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EF_SelectingFromDatabase", "EF_SelectingFromDatabase\EF_SelectingFromDatabase.csproj", "{7919CB37-27DC-44B9-92D3-26FAE3B9BF93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp_ChuckNorrisAPI", "WebApp_ChuckNorrisAPI\WebApp_ChuckNorrisAPI.csproj", "{211B8272-9D01-46B8-945B-130BD9106CB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7919CB37-27DC-44B9-92D3-26FAE3B9BF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7919CB37-27DC-44B9-92D3-26FAE3B9BF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7919CB37-27DC-44B9-92D3-26FAE3B9BF93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{211B8272-9D01-46B8-945B-130BD9106CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211B8272-9D01-46B8-945B-130BD9106CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211B8272-9D01-46B8-945B-130BD9106CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211B8272-9D01-46B8-945B-130BD9106CB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
